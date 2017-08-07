@@ -1,0 +1,9 @@
+#table {
+	min-width: 100%;
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.col-border {
+	border: 1px solid black;
+}
