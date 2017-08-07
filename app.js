@@ -5,12 +5,11 @@ function listCollab() {
     success: function(data) {
       $('#tbody').empty();
       data.forEach(function(collab) {
-        $('#tbody').append("<tr>");
-        $('#tbody').append("<td>" + collab.matricule + "</td>");
-        $('#tbody').append("<td>" + collab.nom + "</td>");
-        $('#tbody').append("<td>" + collab.prenom + "</td>");
-        $('#tbody').append("</tr>");
-        
+        var line = "<tr>";
+        line += "<td>" + collab.matricule + "</td>";
+        line += "<td>" + collab.nom + "</td>";
+        line += "<td>" + collab.prenom + "</td></tr>";
+        $('#tbody').append(line);
       });
     },
     error: function(jqXHR) {
