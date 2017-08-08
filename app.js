@@ -13,7 +13,7 @@ function listCollab() {
       });
     },
     error: function(jqXHR) {
-      $('#table').empty().append("<tr><td> " + jqXHR.responseText + "</td></tr>");
+      $('#table').empty().append("<tr><td>" + jqXHR.responseText + "</td></tr>");
     }
   });
 }
